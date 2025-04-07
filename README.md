@@ -296,22 +296,87 @@ Výstup:
 
 ## Mapování atributů na eventy
 
-| Atribut | Klíč | Popis |
-|--------------|------------------|---------------------------|
-| **Event ID** | `data.win.system.eventID` | Windows Event ID |
-| **Uživatelské jméno** | `data.win.eventdata.targetUserName` | Uživatelské jméno spojené s událostí |
-| **Site, kde byl účet vytvořen** | `agent.labels.mcs.group.firma` | Skupina, kde byl účet vytvořen |
-| **Název stanice (při neúspěšném přihlášení)** | `data.win.eventdata.workstationName` | Název počítače u neúspěšného přihlášení |
-| **Název serveru** | `agent.name` | Název serveru, tenantu, kde se událost odehrála |
-| **Název procesu** | `data.win.eventdata.newProcessName / data.win.eventdata.processName` | Název spuštěného procesu |
-| **Přístup k objektu (souboru, složce, apod.)** | `data.win.eventdata.objectName` | Název nebo cesta objektu |
-| **Přístupová oprávnění** | `data.win.eventdata.accesses` | Oprávnění k přístupu k objektu |
-| **Bezpečnostní identifikátor uživatele (SID)** | `data.win.eventdata.securityID` | Unikátní bezpečnostní ID uživatele |
-| **Identifikátor handle objektu** | `data.win.eventdata.handleID` | ID handle pro objekt |
-| **Elevace oprávnění procesu** | `data.win.eventdata.tokenElevationType` | Typ zvýšení oprávnění procesu |
-| **Instalace systémové služby** | `data.win.eventdata.serviceFileName` | Cesta k souboru instalované služby |
-| **Název služby** | `data.win.eventdata.serviceName` | Název systémové služby |
-| **Název úlohy** | `data.win.eventdata.taskName` | Název plánované úlohy nebo úkolu |
+<table>
+  <thead>
+    <tr>
+      <th>Atribut</th>
+      <th>Klíč</th>
+      <th>Popis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Event ID</strong></td>
+      <td><code>data.win.system.eventID</code></td>
+      <td>Windows Event ID</td>
+    </tr>
+    <tr>
+      <td><strong>Uživatelské jméno</strong></td>
+      <td><code>data.win.eventdata.targetUserName</code></td>
+      <td>Uživatelské jméno spojené s událostí</td>
+    </tr>
+    <tr>
+      <td><strong>Site, kde byl účet vytvořen</strong></td>
+      <td><code>agent.labels.mcs.group.firma</code></td>
+      <td>Skupina, kde byl účet vytvořen</td>
+    </tr>
+    <tr>
+      <td><strong>Název stanice (při neúspěšném přihlášení)</strong></td>
+      <td><code>data.win.eventdata.workstationName</code></td>
+      <td>Název počítače u neúspěšného přihlášení</td>
+    </tr>
+    <tr>
+      <td><strong>Název serveru</strong></td>
+      <td><code>agent.name</code></td>
+      <td>Název serveru, tenantu, kde se událost odehrála</td>
+    </tr>
+    <tr>
+      <td><strong>Název procesu</strong></td>
+      <td><code>data.win.eventdata.newProcessName / data.win.eventdata.processName</code></td>
+      <td>Název spuštěného procesu</td>
+    </tr>
+    <tr>
+      <td><strong>Přístup k objektu (souboru, složce, apod.)</strong></td>
+      <td><code>data.win.eventdata.objectName</code></td>
+      <td>Název nebo cesta objektu</td>
+    </tr>
+    <tr>
+      <td><strong>Přístupová oprávnění</strong></td>
+      <td><code>data.win.eventdata.accesses</code></td>
+      <td>Oprávnění k přístupu k objektu</td>
+    </tr>
+    <tr>
+      <td><strong>Bezpečnostní identifikátor uživatele (SID)</strong></td>
+      <td><code>data.win.eventdata.securityID</code></td>
+      <td>Unikátní bezpečnostní ID uživatele</td>
+    </tr>
+    <tr>
+      <td><strong>Identifikátor handle objektu</strong></td>
+      <td><code>data.win.eventdata.handleID</code></td>
+      <td>ID handle pro objekt</td>
+    </tr>
+    <tr>
+      <td><strong>Elevace oprávnění procesu</strong></td>
+      <td><code>data.win.eventdata.tokenElevationType</code></td>
+      <td>Typ zvýšení oprávnění procesu</td>
+    </tr>
+    <tr>
+      <td><strong>Instalace systémové služby</strong></td>
+      <td><code>data.win.eventdata.serviceFileName</code></td>
+      <td>Cesta k souboru instalované služby</td>
+    </tr>
+    <tr>
+      <td><strong>Název služby</strong></td>
+      <td><code>data.win.eventdata.serviceName</code></td>
+      <td>Název systémové služby</td>
+    </tr>
+    <tr>
+      <td><strong>Název úlohy</strong></td>
+      <td><code>data.win.eventdata.taskName</code></td>
+      <td>Název plánované úlohy nebo úkolu</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
