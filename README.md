@@ -295,6 +295,7 @@ Výstup:
 
 
 ## Mapování atributů na eventy
+
 | Atribut | Klíč | Popis |
 |--------------|------------------|---------------------------|
 | **Event ID** | `data.win.system.eventID` | Windows Event ID |
